@@ -7,18 +7,28 @@ class UserManagement {
         Users = new Dictionary<string, User>(StringComparer.OrdinalIgnoreCase);
     }
 
-    public void RegisterUser() {
+
+    private string FindValidName() {
         string name = string.Empty;
         while (String.IsNullOrEmpty(name)) {
-            Console.WriteLine("Please enter your usename:\n");
+            Console.WriteLine("Please enter a usename:\n");
             string input = Console.ReadLine();
             if (String.IsNullOrEmpty(input)) Console.WriteLine("Please enter a valid name");
             else if (input != input.Trim()) {Console.WriteLine("No leading or trailing whitespace allowed");}
             else if (Users.ContainsKey(input)) Console.WriteLine("This name is already taken...");
             else name = input;
         }
+        return name;
+    }
 
+    public void RegisterUser () {
+        string name = FindValidName();
         Users.Add(name, new User(name));
+    }
+
+    public void RegisterAdmin() {
+        string name = FindValidName();
+        Users.Add(name, new Admin(name));
     }
 
     public User LoginUser() {

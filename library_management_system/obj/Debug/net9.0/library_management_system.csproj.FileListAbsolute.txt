@@ -12,3 +12,4 @@
 /Users/bruij03/projects/oop_practice/library_management_system/library_management_system/obj/Debug/net9.0/library_management_system.pdb
 /Users/bruij03/projects/oop_practice/library_management_system/library_management_system/obj/Debug/net9.0/library_management_system.genruntimeconfig.cache
 /Users/bruij03/projects/oop_practice/library_management_system/library_management_system/obj/Debug/net9.0/ref/library_management_system.dll
+/Users/bruij03/projects/oop_practice/library_management_system/library_management_system/obj/Debug/net9.0/library_management_system.sourcelink.json
