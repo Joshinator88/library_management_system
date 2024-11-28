@@ -1,0 +1,14 @@
+/Users/bruij03/projects/oop_practice/library_management_system/library_management_system/bin/Debug/net9.0/library_management_system
+/Users/bruij03/projects/oop_practice/library_management_system/library_management_system/bin/Debug/net9.0/library_management_system.deps.json
+/Users/bruij03/projects/oop_practice/library_management_system/library_management_system/bin/Debug/net9.0/library_management_system.runtimeconfig.json
+/Users/bruij03/projects/oop_practice/library_management_system/library_management_system/bin/Debug/net9.0/library_management_system.dll
+/Users/bruij03/projects/oop_practice/library_management_system/library_management_system/bin/Debug/net9.0/library_management_system.pdb
+/Users/bruij03/projects/oop_practice/library_management_system/library_management_system/obj/Debug/net9.0/library_management_system.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bruij03/projects/oop_practice/library_management_system/library_management_system/obj/Debug/net9.0/library_management_system.AssemblyInfoInputs.cache
+/Users/bruij03/projects/oop_practice/library_management_system/library_management_system/obj/Debug/net9.0/library_management_system.AssemblyInfo.cs
+/Users/bruij03/projects/oop_practice/library_management_system/library_management_system/obj/Debug/net9.0/library_management_system.csproj.CoreCompileInputs.cache
+/Users/bruij03/projects/oop_practice/library_management_system/library_management_system/obj/Debug/net9.0/library_management_system.dll
+/Users/bruij03/projects/oop_practice/library_management_system/library_management_system/obj/Debug/net9.0/refint/library_management_system.dll
+/Users/bruij03/projects/oop_practice/library_management_system/library_management_system/obj/Debug/net9.0/library_management_system.pdb
+/Users/bruij03/projects/oop_practice/library_management_system/library_management_system/obj/Debug/net9.0/library_management_system.genruntimeconfig.cache
+/Users/bruij03/projects/oop_practice/library_management_system/library_management_system/obj/Debug/net9.0/ref/library_management_system.dll
