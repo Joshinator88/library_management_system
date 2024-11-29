@@ -1,6 +1,6 @@
 class User {
     public string Name { get; set; }
-    protected bool IsAdmin { get; set; }
+    public bool IsAdmin { get; protected set; }
 
     private double Fine { get; set; }
 
@@ -9,6 +9,4 @@ class User {
         Fine = 0;
         IsAdmin = false;
     }
-    
-    
 }

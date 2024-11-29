@@ -6,11 +6,11 @@ class AdminMenu : Menu
 
     public override void DisplayMenu()
     {
-        System.Console.WriteLine("Welcome back, what action do you want to perform?");
-        System.Console.WriteLine("[1] Create a book");
-        System.Console.WriteLine("[2] Delete a Book");
-        System.Console.WriteLine("[3] Create an Admin User");
-        System.Console.WriteLine("[4] Rent a Book");
-        System.Console.WriteLine("[5] Return a book");
+        Console.WriteLine("Welcome back, what action do you want to perform?");
+        Console.WriteLine("[1] Create a book");
+        Console.WriteLine("[2] Delete a Book");
+        Console.WriteLine("[3] Create an Admin User");
+        Console.WriteLine("[4] Rent a Book");
+        Console.WriteLine("[5] Return a book");
     }
 }

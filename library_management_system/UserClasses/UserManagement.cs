@@ -21,13 +21,13 @@ class UserManagement {
         return name;
     }
 
-    public void RegisterUser () {
-        string name = FindValidName();
+    public void RegisterUser (string name = "") {
+        if (string.IsNullOrEmpty(name)) name = FindValidName();
         Users.Add(name, new User(name));
     }
 
-    public void RegisterAdmin() {
-        string name = FindValidName();
+    public void RegisterAdmin(string name = "") {
+        if (string.IsNullOrEmpty(name)) name = FindValidName();
         Users.Add(name, new Admin(name));
     }
 

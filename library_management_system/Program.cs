@@ -2,7 +2,8 @@
 Library stock = new Library();
 Seeder seeder = new Seeder(stock);
 seeder.SeedBooks();
-StartMenu startMenu = new StartMenu();
+MenuHandler menuHandler = new MenuHandler();
+// StartMenu startMenu = new StartMenu();
 UserManagement management = new UserManagement();
 CommandHandler commandHandler = new CommandHandler();
 
@@ -10,8 +11,11 @@ CommandHandler commandHandler = new CommandHandler();
 commandHandler.AddCommand(1, new LoginCommand(management));
 commandHandler.AddCommand(2, new RegisterCommand(management));
 
-while(true) {
-    startMenu.DisplayMenu();
-    commandHandler.ExecuteCommand(startMenu.UserChoice());
 
-}
+
+// while(true) {
+//     System.Console.WriteLine("hi");
+//     menuHandler.DisplayMenu();
+//     commandHandler.ExecuteCommand(menuHandler.UserChoice());
+
+// }
