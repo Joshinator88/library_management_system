@@ -8,7 +8,7 @@ seeder.SeedUsers(management);
 Session session = new Session();
 
 while(true) {
-    Menu menu = MenuFactory.ReturnMenu(session, management);
+    Menu menu = MenuFactory.ReturnMenu(session, management, stock);
     menu.DisplayMenu();
     menu.Commands[menu.UserChoice()].Execute();
 }

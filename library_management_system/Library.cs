@@ -6,7 +6,8 @@ class Library {
     }
 
     public void AddBook(Book book) {
-        Stock.Add(book);
+        if (Stock.Contains(book)) book.AddCopy();
+        else Stock.Add(book);
     }
 
     public void ShowInventory() {

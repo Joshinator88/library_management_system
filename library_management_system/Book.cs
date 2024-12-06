@@ -9,7 +9,6 @@ class Book {
         Author = author;
         PublicationDate = publicationDate;
         Copies = new List<Copy>();
-        AddCopy();
     }
 
     public void AddCopy() {

@@ -1,10 +1,10 @@
 class AdminMenu : Menu 
 {
 
-    public AdminMenu(Session session) {
+    public AdminMenu(Session session, Library stock) {
         Commands = new Dictionary<int, ICommand>
         {
-            {1, new CreateBookCommand()},
+            {1, new CreateBookCommand(stock)},
             {2, new DeleteBookCommand()},
             {3, new CreateAdminCommand()},
             {4, new RentBookCommand()},
