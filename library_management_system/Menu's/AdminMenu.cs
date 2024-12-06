@@ -1,7 +1,15 @@
 class AdminMenu : Menu 
 {
+
     public AdminMenu() {
-        OptionCount = 5;
+        Commands = new Dictionary<int, ICommand>
+        {
+            {1, new CreateBookCommand()},
+            {2, new DeleteBookCommand()},
+            {3, new CreateAdminCommand()},
+            {4, new RentBookCommand()},
+            {5, new ReturnBookCommand()}
+        };
     }
 
     public override void DisplayMenu()

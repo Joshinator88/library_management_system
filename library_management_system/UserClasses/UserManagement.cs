@@ -1,4 +1,3 @@
-using System.Transactions;
 
 class UserManagement {
     private Dictionary<string, User> Users { get; set; }
@@ -21,9 +20,11 @@ class UserManagement {
         return name;
     }
 
-    public void RegisterUser (string name = "") {
+    public User RegisterUser (string name = "") {
         if (string.IsNullOrEmpty(name)) name = FindValidName();
-        Users.Add(name, new User(name));
+        User newUser = new User(name);
+        Users.Add(name, newUser);
+        return newUser;
     }
 
     public void RegisterAdmin(string name = "") {

@@ -1,7 +1,11 @@
 
 class StartMenu : Menu {
-    public StartMenu() {
-        OptionCount = 2;
+    public StartMenu(Session session, UserManagement management) {
+        Commands = new Dictionary<int, ICommand> {
+            { 1, new LoginCommand(management, session) },
+            { 2, new RegisterCommand(management, session) }
+        };
+       
     }
     public override void DisplayMenu() {
         Console.WriteLine("Welcome to the library,");

@@ -1,10 +1,12 @@
 class RegisterCommand : ICommand {
     public UserManagement Management { get; set; }
-    public RegisterCommand(UserManagement management) {
-        Management = management ?? throw new ArgumentNullException(nameof(management));
+    private Session Session { get; set; }
+    public RegisterCommand(UserManagement userManagement, Session session) {
+        Management = userManagement ?? throw new ArgumentNullException(nameof(userManagement));
+        Session = session ?? throw new ArgumentNullException(nameof(session));
     }
     public void Execute(){
-            Management.RegisterUser();
+            Session.SetUser(Management.RegisterUser());
             Console.WriteLine("User is registered!");
     }
 }
