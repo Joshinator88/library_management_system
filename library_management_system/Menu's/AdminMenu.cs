@@ -1,14 +1,15 @@
 class AdminMenu : Menu 
 {
 
-    public AdminMenu() {
+    public AdminMenu(Session session) {
         Commands = new Dictionary<int, ICommand>
         {
             {1, new CreateBookCommand()},
             {2, new DeleteBookCommand()},
             {3, new CreateAdminCommand()},
             {4, new RentBookCommand()},
-            {5, new ReturnBookCommand()}
+            {5, new ReturnBookCommand()},
+            {6, new LogOutCommand(session)}
         };
     }
 
@@ -20,5 +21,6 @@ class AdminMenu : Menu
         Console.WriteLine("[3] Create an Admin User");
         Console.WriteLine("[4] Rent a Book");
         Console.WriteLine("[5] Return a book");
+        Console.WriteLine("[6] Log Out");
     }
 }
