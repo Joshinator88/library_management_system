@@ -1,3 +1,6 @@
+/// <summary>
+/// class to keep track of each individual copy a certain book
+/// </summary>
 class Copy {
     private bool IsAvailable { get; set; }
     private DateTime? ReturnDate { get; set; }
